@@ -25,6 +25,13 @@ variable "mongo_url"  {
   default = ""
 }
 
+variable "docker_sha"  {
+  description = "The SHA from the docker build"
+  type = string
+  default = ""
+}
+
+
 
 
 # No longer need this, using dockerhub repo
@@ -45,7 +52,7 @@ resource "aws_ecs_task_definition" "mttrafficchecker_task" {
   [
     {
       "name": "mttraffic-checker-task",
-      "image": "mcguinnessa/demo-mttraffic-checker",
+      "image": "mcguinnessa/demo-mttraffic-checker@${var.docker_sha}",
       "essential": true,
       "memory": 512,
       "cpu": 256,
