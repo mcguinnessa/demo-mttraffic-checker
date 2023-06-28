@@ -15,8 +15,8 @@ const max_variance = 2;
 //nst hourly_weighting = [1,  2, 3, 4, 5, 6,  7,  8,  9   10, 11, 12, 13, 14 ,15, 16, 17, 18,  19,  20, 21, 22, 23, 24]
 //const hourly_weighting = [10, 6, 2, 1, 3, 20, 40, 45, 50, 43, 64, 77, 90, 80, 90, 92, 95, 99, 100, 95, 75, 65, 30, 20]
 const weekday_weighting = [ 8, 6, 2, 1, 2, 16, 32, 36, 40, 35, 52, 62, 72, 64, 72, 73, 76, 79, 80, 77, 60, 52, 24, 16]
-const fri_weighting =     [10,  6, 2, 1, 3, 20, 40, 45, 50, 43, 64, 77, 90, 80, 90, 92, 95, 99, 100, 95, 96, 86, 83, 54]
-const sat_weighting =     [20, 12, 7, 1, 3, 20, 40, 45, 50, 43, 64, 77, 90, 80, 90, 92, 95, 99, 100, 95, 97, 87, 80, 60]
+const fri_weighting =     [10,  6, 2, 1, 3, 20, 40, 45, 50, 43, 64, 77, 85, 77, 90, 92, 95, 99, 100, 95, 96, 86, 83, 54]
+const sat_weighting =     [20, 12, 7, 1, 3, 20, 40, 45, 50, 43, 64, 77, 90, 80, 99, 100, 99, 99, 100, 95, 97, 87, 80, 60]
 const sun_weighting =     [20, 12, 7, 1, 3, 20, 40, 45, 50, 43, 64, 77, 90, 80, 90, 92, 80, 85, 87, 77, 60, 54, 23, 14]
 
 const weekly_weighting = [sun_weighting, weekday_weighting, weekday_weighting, weekday_weighting, weekday_weighting, fri_weighting, sat_weighting]
